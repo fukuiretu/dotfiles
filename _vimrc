@@ -2,8 +2,13 @@ set nocompatible
 
 " カーソル行をハイライト
 set cursorline
+syntax on
+set number
 
 filetype off
+
+" swapファイルを作らない
+set noswapfile
 
 " setup plugin start
 set rtp+=~/dotfiles/vimfiles/bundle/vundle/
