@@ -1,9 +1,10 @@
+set enc=utf-8
 set nocompatible
 
-" カーソル行をハイライト
-set cursorline
+set cursorline "カーソル行をハイライト
 syntax on
 set number
+set autoindent
 
 filetype off
 

@@ -87,3 +87,4 @@ setopt noautoremoveslash
 
 ## alias
 alias ll="ls -lrtaG"
+alias vi='vim'

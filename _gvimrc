@@ -1,0 +1,5 @@
+set showtabline=2
+set lines=40 columns=80 "横幅と縦幅
+set transparency=5 "透明度
+
+colorscheme molokai
