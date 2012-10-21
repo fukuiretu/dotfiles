@@ -1,5 +1,6 @@
 set enc=utf-8
 set nocompatible
+set notitle
 
 set cursorline "カーソル行をハイライト
 syntax on
