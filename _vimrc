@@ -11,6 +11,7 @@ filetype off
 
 " swapファイルを作らない
 set noswapfile
+colorscheme molokai
 
 " setup plugin start
 set rtp+=~/dotfiles/vimfiles/bundle/vundle/
