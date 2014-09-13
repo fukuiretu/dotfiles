@@ -1,29 +1,28 @@
 set enc=utf-8
 set nocompatible
-set title
+set notitle
 
 set cursorline "カーソル行をハイライト
 syntax on
 set number
-set autoindent
+"set autoindent
 
 filetype off
 
 " swapファイルを作らない
 set noswapfile
-colorscheme molokai
 
 " setup plugin start
-set rtp+=~/dotfiles/vimfiles/bundle/vundle/
-call vundle#rc()
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/unite.vim'
-Bundle 'thinca/vim-ref'
-Bundle 'thinca/vim-quickrun'
-Bundle 'trinity.vim'
-Bundle 'The-NERD-tree'
+"set rtp+=~/dotfiles/vimfiles/bundle/vundle/
+"call vundle#rc()
+"Bundle 'Shougo/neocomplcache'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'thinca/vim-ref'
+"Bundle 'thinca/vim-quickrun'
+"Bundle 'trinity.vim'
+"Bundle 'The-NERD-tree'
 
-filetype plugin indent on     " required!
+"filetype plugin indent on     " required!
 " setup plugin end
 
-nmap <F9> :NERDTreeToggle
+"nmap <F9> :NERDTreeToggle
