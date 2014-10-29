@@ -11,6 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export EDITOR=vi
+
 ## rbenv
 if [ -d $HOME/.rbenv ]; then
   eval "$(rbenv init - zsh)"
@@ -18,9 +20,9 @@ if [ -d $HOME/.rbenv ]; then
 fi
 
 ## z
-if which brew > /dev/null; then
-  source $(brew --prefix)/etc/profile.d/z.sh
-fi
+# if which brew > /dev/null; then
+#  source $(brew --prefix)/etc/profile.d/z.sh
+# fi
 
 ## hub
 eval "$(hub alias -s)"
@@ -31,5 +33,18 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 ## alias
 alias lla="ls -lart"
+alias gcc=llvm-gcc
+alias be="bundle exec"
 
 export PATH="$PATH:$HOME/bin"
+
+## antigen
+if [[ -f $HOME/.zsh/antigen/antigen.zsh ]]; then
+  source $HOME/.zsh/antigen/antigen.zsh
+  antigen bundle mollifier/anyframe
+  antigen apply
+fi
+
+## cdr
+autoload -Uz add-zsh-hock
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
