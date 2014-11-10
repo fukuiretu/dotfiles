@@ -46,5 +46,11 @@ if [[ -f $HOME/.zsh/antigen/antigen.zsh ]]; then
 fi
 
 ## cdr
-autoload -Uz add-zsh-hock
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+zstyle ':chpwd:*' recent-dirs-max 500
+zstyle ':chpwd:*' recent-dirs-pushd true
+
+## key bind
+bindkey '^x^r' anyframe-widget-execute-history
+bindkey '^xb' anyframe-widget-cdr
