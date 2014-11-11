@@ -1,0 +1,46 @@
+'global':
+  'editor':
+    'fontSize': 14
+    'invisibles': {}
+  'core':
+    'ignoredNames': [
+      '.git'
+      '.svn'
+      '.DS_Store'
+    ]
+    'disabledPackages': [
+      'vim-mode'
+      'atom-lint'
+      'atom-ctags'
+      'minimap'
+      'linter-rubocop'
+      'linter-shellcheck'
+    ]
+    'themes': [
+      'atom-dark-ui'
+      'monokai'
+    ]
+  'exception-reporting':
+    'userId': '24c994bd-2d31-e637-8112-88803be44f27'
+  'release-notes':
+    'viewedVersion': '0.92.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': 'f1dfcbffca542df359029378990b82b080ebc32b'
+  'recent-files':
+    'updated': false
+  'autocomplete':
+    'includeCompletionsFromAllBuffers': true
+  'autocomplete-plus':
+    'includeCompletionsFromAllBuffers': true
+    'fileBlacklist': '.*'
+  'minimap':
+    'autoToggle': true
+  'linter':
+    'showStatusBarWhenCursorIsInErrorRange': true
+    'lintOnEditorFocus': false
+  'atom-beautify':
+    '_analyticsUserId': '6b42b875-c5b7-4241-8245-a18f08ade09a'
+'.hyperlink.text':
+  'editor': {}
