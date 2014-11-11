@@ -63,6 +63,7 @@ packages=(
     markdown
     jq
     peco
+    ctags
 
     # Languages
     rbenv
