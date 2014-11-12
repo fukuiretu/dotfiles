@@ -1,7 +1,6 @@
 'global':
   'editor':
     'fontSize': 14
-    'invisibles': {}
   'core':
     'ignoredNames': [
       '.git'

@@ -6,11 +6,16 @@
   editor = /usr/local/bin/vim
 
 [credential]
-  helper = osxkeychain          
-  
+  helper = osxkeychain
+
 [color]
   status = auto
   diff = auto
   branch = auto
   interactive = auto
   grep = auto
+
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true

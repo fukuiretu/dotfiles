@@ -1,0 +1,12 @@
+##### general #####
+alias lla="ls -lart"
+alias gcc=llvm-gcc
+
+##### ctags #####
+alias ctags="`brew --prefix`/bin/ctags"
+
+##### ruby #####
+alias be='bundle exec'
+alias bi='bundle install --path vendor/bundle'
+alias rs='rspec'
+alias ra='rake'

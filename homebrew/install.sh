@@ -64,6 +64,7 @@ packages=(
     jq
     peco
     ctags
+    z
 
     # Languages
     rbenv
@@ -110,6 +111,7 @@ apps=(
     dropbox
     xtrafinder
     appcleaner
+    caffeine
 )
 
 # Install apps to /Applications
