@@ -13,7 +13,6 @@
       'atom-lint'
       'atom-ctags'
       'minimap'
-      'linter-rubocop'
       'linter-shellcheck'
     ]
     'themes': [
