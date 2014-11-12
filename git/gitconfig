@@ -1,0 +1,16 @@
+[include]
+  path = ~/.gitconfig.local
+
+[core]
+  excludesfile = ~/.gitignore.global
+  editor = /usr/local/bin/vim
+
+[credential]
+  helper = osxkeychain          
+  
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto

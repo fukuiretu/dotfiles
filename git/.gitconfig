@@ -1,9 +1,0 @@
-[color]
-	ui = auto
-[core]
-	excludesfile = ~/.gitignore.local
-        editor = /usr/local/bin/vim
-[include]
-        path = ~/.gitconfig.local
-[credential]
-	helper = cache
