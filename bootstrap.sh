@@ -1,34 +1,27 @@
 #!/bin/bash
 
-sh homebrew/install.sh
+export dotfiles_dir=~/.dotfiles
 
-cd
+## Setup Homebrew
+sh ${dotfiles_dir}/homebrew/install.sh
 
-[ -f .zshrc ] && rm -f .zshrc
-ln -fs ~/.dotfiles/zsh/zshrc .zshrc
+## Setup atom
+sh ${dotfiles_dir}/atom/setup.sh
 
-[ -f .vimrc ] && rm -f .vimrc
-ln -fs ~/.dotfiles/vim/vimrc .vimrc
+## Setup dotfiles Symlink
+dotfiles=(
 
-[ -f .tigrc ] && rm -f .tigrc
-ln -fs ~/.dotfiles/tig/tigrc .tigrc
+    zsh/zshrc
+    vim/vimrc
+    tig/tigrc
+    git/gitconfig
+    git/gitignore.global
+)
 
-[ -f .gitconfig ] && rm -f .gitconfig
-ln -fs ~/.dotfiles/git/gitconfig .gitconfig
-
-[ -f .gitignore.global ] && rm -f .gitignore.global
-ln -fs ~/.dotfiles/git/gitignore.global .gitignore.global
-
-cd ~/.atom
-
-[ -f config.cson ] && rm -f config.cson
-ln -fs ~/.dotfiles/atom/config.cson config.cson
-
-[ -f keymap.cson ] && rm -f keymap.cson
-ln -fs ~/.dotfiles/atom/keymap.cson keymap.cson
-
-[ -f snippets.cson ] && rm -f snippets.cson
-ln -fs ~/.dotfiles/atom/snippets.cson snippets.cson
-
-[ -f styles.less ] && rm -f styles.less
-ln -fs ~/.dotfiles/atom/styles.less styles.less
+echo "setup dotfiles..."
+for orig_dotfile in ${dotfiles[@]}
+do
+    dotfile=${orig_dotfile##*/}
+    ln -fs ${dotfiles_dir}/${orig_dotfile} ~/.${dotfile}
+done
+echo "setup dotfiles done."

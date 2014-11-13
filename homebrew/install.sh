@@ -120,3 +120,5 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 # We need to link it
 brew cask alfred link
+
+echo "install apps done."
