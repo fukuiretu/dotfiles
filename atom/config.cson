@@ -1,6 +1,9 @@
 'global':
   'editor':
     'fontSize': 14
+    'invisibles': {}
+    'showIndentGuide': true
+    'showInvisibles': true
   'core':
     'ignoredNames': [
       '.git'
