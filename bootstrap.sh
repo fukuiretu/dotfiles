@@ -3,10 +3,10 @@
 export dotfiles_dir=~/.dotfiles
 
 ## Setup Homebrew
-# sh ${dotfiles_dir}/homebrew/install.sh
+sh ${dotfiles_dir}/homebrew/install.sh
 
 ## Setup atom
-# sh ${dotfiles_dir}/atom/setup.sh
+sh ${dotfiles_dir}/atom/setup.sh
 
 ## Setup zsh
 sh ${dotfiles_dir}/zsh/setup.sh
