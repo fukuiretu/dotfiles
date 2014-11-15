@@ -1,7 +1,6 @@
 'global':
   'editor':
     'fontSize': 14
-    'invisibles': {}
     'showIndentGuide': true
     'showInvisibles': true
   'core':
@@ -16,6 +15,7 @@
       'atom-ctags'
       'minimap'
       'linter-shellcheck'
+      'linter-rubocop'
     ]
     'themes': [
       'atom-dark-ui'
