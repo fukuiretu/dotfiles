@@ -14,5 +14,4 @@ if which brew > /dev/null; then
 fi
 
 ##### hub #####
-eval "$(hub alias -s)"
-compdef hub=git
+function git(){hub "$@"}
