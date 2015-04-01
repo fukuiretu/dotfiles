@@ -17,6 +17,7 @@ fi
 if [[ -f ${zdotdir}/antigen/antigen.zsh ]]; then
   source ${zdotdir}/antigen/antigen.zsh
   antigen bundle mollifier/anyframe
+  antigen bundle marzocchi/zsh-notify
   antigen apply
 fi
 
@@ -34,7 +35,8 @@ setopt hist_ignore_dups
 setopt share_history
 
 ##### Read settings #####
-[ -f ~/dotfiles/zsh/global      ] && source ~/dotfiles/zsh/global
-[ -f ~/dotfiles/zsh/alias       ] && source ~/dotfiles/zsh/alias
-[ -f ~/dotfiles/zsh/functions   ] && source ~/dotfiles/zsh/functions
-[ -f ~/dotfiles/zsh/keybinds    ] && source ~/dotfiles/zsh/keybinds
+[ -f ~/dotfiles/zsh/global              ] && source ~/dotfiles/zsh/global
+[ -f ~/dotfiles/zsh/alias               ] && source ~/dotfiles/zsh/alias
+[ -f ~/dotfiles/zsh/functions           ] && source ~/dotfiles/zsh/functions
+[ -f ~/dotfiles/zsh/keybinds            ] && source ~/dotfiles/zsh/keybinds
+[ -f ~/dotfiles/zsh/global_private      ] && source ~/dotfiles/zsh/global_private
