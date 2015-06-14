@@ -19,6 +19,7 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
+
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -26,9 +27,16 @@
 
 [ghq]
     root = ~/.ghq
+
 [grep]
 	lineNumber = true
+
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
+[alias]
+  st = status
+  cm-empty = commit --allow-empty
+  checkout-master-clean = !git checkout master && git pull origin --prune
