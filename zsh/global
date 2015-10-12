@@ -19,3 +19,5 @@ fi
 ##### hub #####
 function git(){hub "$@"}
 
+##### go #####
+export GOPATH=$HOME
