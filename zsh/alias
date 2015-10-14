@@ -10,3 +10,6 @@ alias be='bundle exec'
 alias bi='bundle install --path vendor/bundle'
 alias rs='rspec'
 alias ra='rake'
+
+##### ghq #####
+alias cds='cd $(ghq list -p | peco)'
