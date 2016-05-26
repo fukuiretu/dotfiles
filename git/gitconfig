@@ -1,6 +1,6 @@
 [core]
-  excludesfile = ~/dotfiles/gitignore.global
-  editor = atom --wait
+  excludesfile = ~/dotfiles/git/gitignore.global
+  editor = vim -c "set fenc=utf-8"
 
 [credential]
   helper = osxkeychain
@@ -45,4 +45,4 @@
 	email = fukuiretu@gmail.com
 
 [commit]
-    template = ~/dotfiles/gitmessage
+    template = ~/dotfiles/git/gitmessage
