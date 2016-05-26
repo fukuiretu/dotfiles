@@ -1,6 +1,6 @@
 [core]
   excludesfile = ~/dotfiles/git/gitignore.global
-  editor = vim -c "set fenc=utf-8"
+  editor = vim
 
 [credential]
   helper = osxkeychain
