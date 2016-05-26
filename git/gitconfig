@@ -1,9 +1,6 @@
-[include]
-  path = ~/.gitconfig.local
-
 [core]
-  excludesfile = ~/.gitignore.global
-  editor = /usr/local/bin/vim
+  excludesfile = ~/dotfiles/gitignore.global
+  editor = atom --wait
 
 [credential]
   helper = osxkeychain
@@ -40,3 +37,12 @@
   st = status
   cm-empty = commit --allow-empty
   checkout-master-clean = !git checkout master && git pull origin --prune
+  branch-root = merge-base master HEAD
+  rebase-topic = rebase -i $(git branch-root)
+
+[user]
+	name = fukuiretu
+	email = fukuiretu@gmail.com
+
+[commit]
+    template = ~/dotfiles/gitmessage
