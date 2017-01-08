@@ -1,2 +1,0 @@
-bindkey '^x^r' anyframe-widget-execute-history
-bindkey '^xb' anyframe-widget-cdr
