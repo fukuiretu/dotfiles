@@ -1,8 +1,8 @@
 [init]
-  templatedir = ~/dotfiles/git/git_templates
+  templatedir = ~/dotfiles/config/git_templates
 
 [core]
-  excludesfile = ~/dotfiles/git/gitignore.global
+  excludesfile = ~/dotfiles/config/gitignore.global
   editor = vim
 
 [credential]

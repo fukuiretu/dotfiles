@@ -1,1 +1,1 @@
-ln 'vim/.vimrc'
+ln '.vimrc'

@@ -1,1 +1,1 @@
-ln 'tig/.tigrc'
+ln '.tigrc'

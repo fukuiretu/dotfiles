@@ -1,13 +1,13 @@
 node.reverse_merge!(
   brew: {
-    enable_update: true
-    enable_upgrade: true
+    enable_update: true,
+    enable_upgrade: true,
     add_repositories: %w[
       homebrew/dupes
       homebrew/versions
       homebrew/binary
       motemen/ghq
-    ]
+    ],
     install_packages: %w[
       fish
       vim
@@ -34,8 +34,9 @@ node.reverse_merge!(
       redis
       rbenv
       ruby-build
-    ]
+    ],
   }
 )
+
 
 include_recipe 'homebrew::package'
