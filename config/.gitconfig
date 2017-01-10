@@ -48,4 +48,4 @@
 	email = fukuiretu@gmail.com
 
 [commit]
-    template = ~/dotfiles/git/gitmessage
+    template = ~/dotfiles/config/gitmessage
