@@ -1,0 +1,2 @@
+##### go #####
+export GOPATH=$HOME

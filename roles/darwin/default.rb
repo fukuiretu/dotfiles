@@ -1,0 +1,7 @@
+include_cookbook 'symboliclinks'
+include_cookbook 'homebrew'
+include_cookbook 'vim'
+include_cookbook 'git'
+include_cookbook 'tig'
+include_cookbook 'fish'
+# include_cookbook 'ruby'

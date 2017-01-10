@@ -1,0 +1,51 @@
+[init]
+  templatedir = ~/dotfiles/config/git_templates
+
+[core]
+  excludesfile = ~/dotfiles/config/gitignore.global
+  editor = vim
+
+[credential]
+  helper = osxkeychain
+
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+
+[filter "media"]
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+
+[ghq]
+  root = ~/src
+
+[grep]
+  lineNumber = true
+
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
+
+[alias]
+  st = status
+  cm-empty = commit --allow-empty
+  checkout-master-clean = !git checkout master && git pull origin --prune
+  branch-root = merge-base master HEAD
+  rebase-topic = rebase -i $(git branch-root)
+
+[user]
+	name = fukuiretu
+	email = fukuiretu@gmail.com
+
+[commit]
+    template = ~/dotfiles/config/gitmessage
