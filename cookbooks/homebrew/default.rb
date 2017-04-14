@@ -35,8 +35,12 @@ node.reverse_merge!(
       rbenv
       ruby-build
     ],
+    install_apps: %w[
+      bitbar
+    ]
   }
 )
 
 
 include_recipe 'homebrew::package'
+include_recipe 'homebrew::cask'

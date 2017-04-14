@@ -5,4 +5,4 @@ end
 
 remote_file '/Users/fukuiretu/.config/fish/config.fish'
 remote_file '/Users/fukuiretu/.config/fish/conf.d/aliases.fish'
-remote_file '/Users/fukuiretu/.config/fish/conf.d/hub.fish'
+# remote_file '/Users/fukuiretu/.config/fish/conf.d/hub.fish'
