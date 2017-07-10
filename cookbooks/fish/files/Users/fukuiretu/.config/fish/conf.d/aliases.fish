@@ -1,6 +1,6 @@
 ##### ruby #####
-alias be="bundle _1.10.6_ exec"
-alias bi="bundle install --path vendor/bundle"
+alias be="bundle exec"
+alias bi="bundle install --path vendor/bundle -j4"
 alias rs="rspec"
 alias ra="rake"
 
