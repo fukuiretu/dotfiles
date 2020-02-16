@@ -1,3 +1,0 @@
-package 'git'
-
-ln '.gitconfig'
