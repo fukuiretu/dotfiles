@@ -1,3 +1,6 @@
+### alias
+alias rm="rmtrash"
+
 ##### zsh-completions
 fpath=(path/to/zsh-completions/src $fpath)
 
