@@ -42,6 +42,7 @@ root = ~/src
   checkout-master-clean = !git checkout master && git pull origin --prune
   branch-root = merge-base master HEAD
   rebase-topic = rebase -i $(git branch-root)
+  delete-merged-branch = "!f () { git checkout $1; git branch --merged | egrep -v '(\\*|develop|master)' | xargs git branch -d; }; f"
 
 [user]
 	name = fukuiretu
