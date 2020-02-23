@@ -27,7 +27,7 @@ function peco-src () {
   zle clear-screen
 }
 zle -N peco-src
-bindkey '^H' peco-src
+bindkey '^G' peco-src
 
 function peco-history-selection() {
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
