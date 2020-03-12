@@ -17,6 +17,7 @@ if [ ! -d "~/.anyenv" ]; then
     anyenv install --init
     anyenv install nodenv
     anyenv install goenv
+    anyenv install rbenv
     exec $SHELL -l
 
     mkdir -p $(anyenv root)/plugins

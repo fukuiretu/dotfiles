@@ -17,6 +17,7 @@ brew "gibo"
 brew "direnv"
 brew "curl"
 brew "wget"
+brew "awscli"
 
 ### cask
 cask "visual-studio-code"
@@ -33,3 +34,4 @@ cask "microsoft-office"
 cask "dash"
 cask "miro-formerly-realtimeboard"
 cask "clipy"
+cask "mysqlworkbench"
