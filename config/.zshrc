@@ -36,3 +36,6 @@ function peco-history-selection() {
 }
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
+
+##### direnv
+eval "$(direnv hook zsh)"
