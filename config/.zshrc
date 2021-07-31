@@ -3,6 +3,7 @@ export LSCOLORS="GxFxCxDxBxegedabagaced"
 
 ### alias
 alias rm="rmtrash"
+alias ip='curl ifconfig.io'
 
 ##### zsh-completions
 fpath=(path/to/zsh-completions/src $fpath)
@@ -39,3 +40,6 @@ bindkey '^R' peco-history-selection
 
 ##### direnv
 eval "$(direnv hook zsh)"
+
+##### ebenv
+export PATH="$HOME/.rbenv/bin:$PATH"

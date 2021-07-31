@@ -5,6 +5,7 @@ ln -fs ~/dotfiles/config/.gitconfig  ~/.gitconfig
 ln -fs ~/dotfiles/config/.tigrc  ~/.tigrc
 ln -fs ~/dotfiles/config/.vimrc  ~/.vimrc
 ln -fs ~/dotfiles/config/.tmux.conf  ~/.tmux.conf
+ln -fs ~/dotfiles/config/.zshrc  ~/.zshrc
 
 ### homebrew-bundle 
 echo "start homebrew-bundle..."
