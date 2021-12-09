@@ -5,6 +5,10 @@ export LSCOLORS="GxFxCxDxBxegedabagaced"
 alias rm="rmtrash"
 alias ip='curl ifconfig.io'
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 ##### zsh-completions
 fpath=(path/to/zsh-completions/src $fpath)
 

@@ -21,6 +21,7 @@ brew "awscli"
 brew "act"
 brew "rbenv"
 brew "ruby-build"
+brew "pure"
 
 ### cask
 #### commmon
