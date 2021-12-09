@@ -23,30 +23,30 @@ brew "rbenv"
 brew "ruby-build"
 
 ### cask
+#### commmon
 cask "visual-studio-code"
 cask "iterm2"
 cask "docker"
-cask "homebrew/cask-versions/sequel-pro-nightly"
-cask "sequel-ace"
 cask "notion"
 cask "google-japanese-ime"
-cask "goland"
-cask "rubymine"
-# cask "zoomus"
-cask "editaro"
-cask "biscuit"
-cask "microsoft-office"
 cask "dash"
 cask "clipy"
-cask "mysqlworkbench"
 cask "showyedge"
 cask "karabiner-elements"
 cask "deepl"
-cask "microsoft-office"
-cask "discord"
-cask "ticktick"
 cask "kindle"
 cask "xbar"
+cask "discord"
+
+### work
+#cask "sequel-ace"
+#cask "goland"
+#cask "rubymine"
+#cask "microsoft-office"
+#cask "mysqlworkbench"
+
+### home
+cask "slack"
+
 ### mas
 mas "Amphetamine", id: 937984704
-# mas 'Todoist', id: 585829637
