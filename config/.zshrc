@@ -2,25 +2,29 @@ export CLICOLOR=1
 export LSCOLORS="GxFxCxDxBxegedabagaced"
 
 ### alias
-alias rm="rmtrash"
 alias ip='curl ifconfig.io'
 
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if type trash > /dev/null 2>&1; then
+   alias rm='trash -F'
+fi
+
 ##### zsh-completions
 fpath=(path/to/zsh-completions/src $fpath)
 
 ##### pure
-fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 ##### anyenv
-eval "$(anyenv init -)"
+# eval "$(anyenv init -)"
 
 ##### go
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=$HOME
+# export PATH=$PATH:$GOPATH/bin
 
 ##### peco
 function peco-src () {
@@ -46,4 +50,4 @@ bindkey '^R' peco-history-selection
 eval "$(direnv hook zsh)"
 
 ##### ebenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
