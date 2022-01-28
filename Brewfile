@@ -2,7 +2,6 @@ cask_args appdir: "/Applications"
 
 ### brew
 brew "git"
-# brew "anyenv"
 brew "zsh"
 brew "zsh-completions"
 brew "docker"
@@ -12,15 +11,11 @@ brew "peco"
 brew "ghq"
 brew "tmux"
 brew "trash"
-# brew "yarn"
 brew "gibo"
 brew "direnv"
 brew "curl"
 brew "wget"
 brew "awscli"
-# brew "act"
-# brew "rbenv"
-# brew "ruby-build"
 brew "pure"
 brew "mindnode-pro"
 
@@ -40,11 +35,6 @@ cask "xbar"
 cask "discord"
 
 ### work
-#cask "sequel-ace"
-#cask "goland"
-#cask "rubymine"
-#cask "microsoft-office"
-#cask "mysqlworkbench"
 
 ### home
 cask "slack"
