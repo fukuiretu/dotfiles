@@ -1,43 +1,35 @@
-cask_args appdir: "/Applications"
-
-### brew
-brew "git"
-brew "zsh"
-brew "zsh-completions"
-brew "docker"
-brew "hub"
-brew "tig"
-brew "peco"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+brew "awscli"
+brew "curl"
+brew "direnv"
+brew "docker", link: false
 brew "ghq"
+brew "gibo"
+brew "git"
+brew "hub"
+brew "mas"
+brew "node"
+brew "peco"
+brew "pure"
+brew "tig"
 brew "tmux"
 brew "trash"
-brew "gibo"
-brew "direnv"
-brew "curl"
 brew "wget"
-brew "awscli"
-brew "pure"
-brew "mindnode-pro"
-
-### cask
-#### commmon
-cask "visual-studio-code"
-cask "iterm2"
+brew "zsh"
+brew "zsh-completions"
+brew "gh"
+cask "deepl", args: { appdir: "/Applications" }
+cask "discord", args: { appdir: "/Applications" }
 cask "docker"
-cask "notion"
-cask "dash"
-cask "clipy"
-cask "showyedge"
-cask "karabiner-elements"
-cask "deepl"
-cask "kindle"
-cask "xbar"
-cask "discord"
-
-### work
-
-### home
-cask "slack"
-
-### mas
-mas "Amphetamine", id: 937984704
+cask "google-japanese-ime"
+cask "iterm2", args: { appdir: "/Applications" }
+cask "karabiner-elements", args: { appdir: "/Applications" }
+cask "kindle", args: { appdir: "/Applications" }
+cask "notion", args: { appdir: "/Applications" }
+cask "showyedge", args: { appdir: "/Applications" }
+cask "slack", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "arc", args: { appdir: "/Applications" }
